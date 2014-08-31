@@ -16,7 +16,7 @@ print (circle_area(8))
 
 def circle_circumference(radius):
     """
-    Calculates the circumference of a circle from its radius
+    Calculates the circumference of a circle from its radius.
     @param radius: length of radius of circle
     @return:circumference (units from radius of circle)
     >>> circle_circumference (8)
