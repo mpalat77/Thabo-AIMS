@@ -1,8 +1,9 @@
 __author__ = 'thabo'
 
 from numpy import*
-from numbers import Number
 import math
+
+
 def circle_area(radius):
     """
     Calculates the area of a circle from radius
@@ -12,7 +13,8 @@ def circle_area(radius):
 201.06
     """
     return pi*radius*radius
-print (circle_area(8))
+print("the circle area is", circle_area(8))
+
 
 def circle_circumference(radius):
     """
@@ -23,7 +25,8 @@ def circle_circumference(radius):
     50.26
     """
     return 2*pi*radius
-print (circle_circumference(8))
+print("the circle circumference is", circle_circumference(8))
+
 
 def circle_circumference(diameter):
     """
@@ -34,10 +37,10 @@ def circle_circumference(diameter):
     50.26
     """
     return pi*diameter
-print(circle_circumference(16))
+print("the circle circumference is", circle_circumference(16))
 
 
-def trapezium_area(a,b,height):
+def trapezium_area(a, b, height):
     """
     Calculates the area of a trapezium from length of the upper and lower sides and height
     @param a: length of upper side or lower side of trapezium
@@ -48,9 +51,10 @@ def trapezium_area(a,b,height):
 10
     """
     return (1/2)*(a+b)*height
-print (trapezium_area(2,3,4))
+print("the trapezium area is", trapezium_area(2, 3, 4))
 
-def triangle_area(base,height):
+
+def triangle_area(base, height):
     """
     Calculates the area of a triangle from its base length and height
     @param base: length of triangle base
@@ -60,9 +64,10 @@ def triangle_area(base,height):
      3
     """
     return (1/2)*base*height
-print (triangle_area(2,3))
+print("the triangle area is", triangle_area(2, 3))
 
-def triangle_area(side,adjacent_side,angle):
+
+def triangle_area(side, adjacent_side, angle):
     """
     Calculates the area of a triangle from the length of a side,adjacent side and the included angle
     @param side: length of any side
@@ -73,7 +78,8 @@ def triangle_area(side,adjacent_side,angle):
 
     """
     return (1/2)*side*adjacent_side*sin(math.radians(angle))
-print(triangle_area(4,5,60))
+print("the triangle area is", triangle_area(4, 5, 60))
+
 
 def cube_area(side):
     """
@@ -85,9 +91,10 @@ def cube_area(side):
 
     """
     return 6*(side*side)
-print (cube_area(4))
+print("the cube area is", cube_area(4))
 
-def cylinder_volume(radius,height):
+
+def cylinder_volume(radius, height):
     """
     Calculates the volume of a cylinder from its radius and height
     @param radius: length of radius of cylinder
@@ -97,7 +104,8 @@ def cylinder_volume(radius,height):
     169.59
     """
     return pi*height*(radius*radius)
-print(cylinder_volume(3,6))
+print("the cylinder volume is", cylinder_volume(3, 6))
+
 
 def cone_volume(radius,height):
     """
@@ -109,7 +117,8 @@ def cone_volume(radius,height):
 67.02
     """
     return (1/3)*height*pi*(radius*radius)
-print (cone_volume(4,4))
+print("the cone volume is", cone_volume(4, 4))
+
 
 def sphere_volume(radius):
     """
@@ -120,9 +129,10 @@ def sphere_volume(radius):
     1436.76
     """
     return (4/3)*pi*(radius*radius*radius)
-print (sphere_volume(7))
+print("the sphere volume is", sphere_volume(7))
 
-def rectangular_prism_volume(length,width,height):
+
+def rectangular_prism_volume(length, width, height):
     """
     Calculates the volume of a rectangular prism from the length and width of its base and its height
     @param length: length of base of prism
@@ -133,9 +143,10 @@ def rectangular_prism_volume(length,width,height):
     24
     """
     return length*width*height
-print(rectangular_prism_volume(2,3,4))
+print("the rectangular prism volume is", rectangular_prism_volume(2, 3, 4))
 
-def rectangular_pyramid_volume(length,width,height):
+
+def rectangular_pyramid_volume(length, width, height):
     """
     Calculates the volume of a rectangular prism from the length and width of its base and its height.
     @param length: length of the base of the pyramid
@@ -146,9 +157,10 @@ def rectangular_pyramid_volume(length,width,height):
     20
     """
     return (1/3)*length*width*height
-print(rectangular_pyramid_volume(3,4,5))
+print("the rectangular pyramid volume is", rectangular_pyramid_volume(3, 4, 5))
 
-def square_pyramid_surface_area(side,slant_height):
+
+def square_pyramid_surface_area(side, slant_height):
     """
     Calculates the surface area of a square pyramid from the length of the base side and the slant height
     @param side: length of the side of base
@@ -159,9 +171,10 @@ def square_pyramid_surface_area(side,slant_height):
 
     """
     return 2*side*slant_height+(side*side)
-print(square_pyramid_surface_area(4,4))
+print("the square pyramid surface area is", square_pyramid_surface_area(4, 4))
 
-def square_pyramid_surface_area(side,height):
+
+def square_pyramid_surface_area(side, height):
     """
     Calculates the surface area of a square pyramid from the length of its base side and its height
     @param side: length of base side
@@ -171,7 +184,7 @@ def square_pyramid_surface_area(side,height):
 59.08
     """
     return side**2+2*side*math.sqrt((side**2/4)+height**2)
-print (square_pyramid_surface_area(4,5))
+print("the square pyramid surface area is", square_pyramid_surface_area(4, 5))
 
 
 
